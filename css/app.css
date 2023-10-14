@@ -162,9 +162,21 @@ img{
     margin: 2rem 0;
 }
 
-.zona{
+.zona, .recompensa{
     position: relative;
+    min-height: 60vh;
     padding: 10px 20px;
+}
+
+.recompensa{
+    font-weight: 700;
+    max-width: 80%;
+    margin: 2rem auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.recompensa p{
+    margin: 2rem 0;
 }
 
 .map img{
