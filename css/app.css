@@ -164,12 +164,11 @@ img{
 
 .zona{
     position: relative;
-    padding: 20px 40px;
+    padding: 10px 20px;
 }
 
-.map{
+.map img{
     display: block;
-    max-width: 80%;
     margin: auto;
 }
 
@@ -186,7 +185,7 @@ img{
     background-color: tomato;
     color: #fff;
     display: block;
-    padding: 20px 40px;
+    padding: 10px 20px;
     border-radius: 10px;
     text-decoration: none;
     font-size: 2.5em;
