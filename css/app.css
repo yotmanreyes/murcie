@@ -6,6 +6,7 @@
 
 body{
     overflow-x: hidden;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 h1, h2, h3{
@@ -15,8 +16,7 @@ h1, h2, h3{
 }
 
 p{
-    font-size: 1.85em;
-    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.55em;
 }
 
 .grid-images{
@@ -47,20 +47,29 @@ p{
 
 .navigation{
     display: flex;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px;
+    padding: 5px;
     min-height: 80px;
-    border: 1px solid #bbb;
     z-index: 100;
     background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .menu{
     display: flex;
+    justify-content: space-between;
     list-style: none;
+    width: 100%;
+}
+
+.menu li a{
+    color: #222;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 .header{
@@ -83,13 +92,122 @@ img{
     max-width: 100%;
 }
 
+.whatsapp{
+    position: relative;
+    display: flex;
+    align-items: center;
+    position:fixed;
+    bottom: 40px;
+    right: 50px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    cursor: default;
+    z-index: 100;
+}
+
+.whatsapp .hide-content{
+    position: absolute;
+    top: 0;
+    transform: translateY(-110%);
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.hide-content a{
+    display: block;
+    text-decoration: none;
+    color: #111;
+    padding: 5px 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    background-color: #111;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.hide-content.is-show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.whatsapp p{
+
+}
+
+.whatsapp img{
+    margin-left: 20px;
+}
+
+.about-me{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-me div{
+    flex: 1 0 100%;
+}
+
+.about-me div:first-child{
+    color: #fff;
+    background-color: #222;
+    padding: 20px 40px;
+}
+
+.about-me div p{
+    margin: 2rem 0;
+}
+
+.zona{
+    position: relative;
+    padding: 20px 40px;
+}
+
+.map{
+    display: block;
+    max-width: 80%;
+    margin: auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.map-link{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    background-color: tomato;
+    color: #fff;
+    display: block;
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 2.5em;
+}
+
 @media(min-width:760px){
     .header div{
         flex: 1 0 50%;
     }
 
+    .menu{
+        max-width: 40%;
+        margin-left: auto;
+    }
+
     .grid-images img{
         width: 300px;
         height:300px;
+    }
+
+    .about-me div{
+        flex: 1 0 50%;
     }
 }

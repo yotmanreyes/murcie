@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Murcie</title>
+    <title>Hola Soy Murcie, estoy perdido 🐈‍|| Ayudame a volver a casa con mi familia  😿👨‍👩‍👧‍👦</title>
     <link rel="stylesheet" href="css/app.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
@@ -19,9 +19,11 @@
 <body>
     <main>
         <nav class="navigation">
+            <img width="80" src="./images/logo.png" alt="">
             <ul class="menu">
-                <li><a href="#">Donde estoy</a></li>
-                <li><a href="#">Sobre mi</a></li>
+                <li><a href="#about-me">Sobre mi 🐈‍</a></li>
+                <li><a href="#recompensa">Recompensa 💰</a></li>
+                <li><a href="#colabora">Colabora con mi paradero 📍</a></li>
             </ul>
         </nav>
         <header class="header">
@@ -35,9 +37,52 @@
                     <img src="./images/murcie_nat.jpeg" alt="">
                     <img src="./images/murcie_osma.jpg" alt="">
                 </div>
+                <p>
+                    No estoy acostumbrado a estar en la calle, estoy algo enfermo y <b>necesito atención inmediata</b>, por favor ayudame
+                </p>
             </div>
         </header>
+        <div class="whatsapp">
+            <p>Contacta con mis cuidadores</p>
+            <div class="hide-content">
+                <a href="https://api.whatsapp.com/send?phone=584244343910&text=Hola%2C%20acabo%20de%20encontrar%20a%20murcie%2C%20estoy%20en">Me encontraste 📲🎉</a>
+                <a href="https://api.whatsapp.com/send?phone=584244343910&text=Hola%20vi%20a%20murcie%20en...">Quieres colaborar con información ℹ️</a>
+            </div>
+            <img width="60" src="./images/whatsapp-icon.png" alt="">
+        </div>
+
+        <section class="about-me" id="about-me">
+            <div>
+                <h2>Acerca de mi</h2>
+                <p>Ojos verdes-amarillos</p>
+                <p>Carita cuadrada, no ovalada</p>
+                <p>Mi cuello es un poco mas marron que negro</p>
+                <p>Soy un poco nervioso</p>
+                <img src="./images/murcie.jpg" width="350" alt="">
+            </div>
+            <div>
+                <img src="./images/murcie_bebe.jpeg" alt="">
+            </div>
+        </section>
+
+        <section class="zona">
+            <h2 class="text-center">En que zona he sido visto</h2>
+            <div class="map">
+                <a class="map-link" target="_blank" href="https://www.google.com/maps/place/10%C2%B013'23.7%22N+67%C2%B057'18.3%22W/@10.2230412,-67.9510767,122m/data=!3m1!1e3!4m4!3m3!8m2!3d10.22325!4d-67.9550833?hl=es&entry=ttu">Revisar Ubicación</a>
+                <img src="./images/site.png" alt="">
+            </div>
+        </section>
     </main>
+    <script>
+        (function(){
+            let whatsapp    = document.querySelector('.whatsapp')
+            let hideContent = document.querySelector('.hide-content')
+
+            whatsapp.addEventListener('click', function(){
+                hideContent.classList.toggle('is-show')
+            })
+        })()
+    </script>
     <!-- <script>
         // Initialize the agent at application startup.
         // Some ad blockers or browsers will block Fingerprint CDN URL.
