@@ -3,9 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Murcie</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="./images/site.webmanifest">
+    <link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,500;1,9..40,1000&family=Fira+Sans:ital,wght@1,200&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <main>
+        <nav class="navigation">
+            <ul class="menu">
+                <li><a href="#">Donde estoy</a></li>
+                <li><a href="#">Sobre mi</a></li>
+            </ul>
+        </nav>
+        <header class="header">
+            <div>
+                <img src="./images/murcie.svg" alt="">
+            </div>
+            <div class="header-info">
+                <h1>Ayudame, estoy perdido 🐈</h1>
+                <p>Mi familia quiere encontrarme y están muy preocupados</p>
+                <div class="grid-images">
+                    <img src="./images/murcie_nat.jpeg" alt="">
+                    <img src="./images/murcie_osma.jpg" alt="">
+                </div>
+            </div>
+        </header>
+    </main>
+    <!-- <script>
+        // Initialize the agent at application startup.
+        // Some ad blockers or browsers will block Fingerprint CDN URL.
+        // To fix this, please use the NPM package instead.
+        const fpPromise = import('https://fpjscdn.net/v3/5nKicF3HAZhVDhtAprDx')
+          .then(FingerprintJS => FingerprintJS.load());
+      
+        // Get the visitor identifier when you need it.
+        fpPromise
+          .then(fp => fp.get())
+          .then(result => console.log(result.visitorId));
+      </script> -->
 </body>
 </html>
